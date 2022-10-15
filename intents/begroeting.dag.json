@@ -1,13 +1,17 @@
 {
-    "questions": [
-        "Ik moet door nu.",
-        "Ik ga door.",
-        "Dag.",
-        "Tot ziens."
-    ],
-    "answers": [
-        "Tot ziens!",
-        "Tot de volgende!",
-        "Doei!"
-    ]
+  "questions": [
+    "doei",
+    "dag",
+    "tot ziens",
+    "tot de volgende",
+    "ciao"
+  ],
+  "answers": [
+    "houdoe",
+    "Hye, Hou je Goed",
+    "Doei",
+    "Tot later",
+    "Ciao",
+    "Adios Amigo"
+  ]
 }

@@ -1,0 +1,2509 @@
+{
+  "settings": {
+    "languages": [
+      "nl"
+    ],
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "nl"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "nl": {
+        "settings": {
+          "locale": "nl",
+          "trainByDomain": false,
+          "tag": "domain-manager-nl",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "doei": {
+            "intent": "begroeting.dag",
+            "domain": "default"
+          },
+          "dag": {
+            "intent": "begroeting.dag",
+            "domain": "default"
+          },
+          "tot,zien": {
+            "intent": "begroeting.dag",
+            "domain": "default"
+          },
+          "de,tot,volgend": {
+            "intent": "begroeting.dag",
+            "domain": "default"
+          },
+          "ciao": {
+            "intent": "begroeting.dag",
+            "domain": "default"
+          },
+          "hey": {
+            "intent": "begroeting.hallo",
+            "domain": "default"
+          },
+          "haai": {
+            "intent": "begroeting.hallo",
+            "domain": "default"
+          },
+          "hallo": {
+            "intent": "begroeting.hallo",
+            "domain": "default"
+          },
+          "hoi": {
+            "intent": "begroeting.hallo",
+            "domain": "default"
+          },
+          "dag,goei": {
+            "intent": "begroeting.hallo",
+            "domain": "default"
+          },
+          "goedendag": {
+            "intent": "begroeting.hallo",
+            "domain": "default"
+          },
+          "hye": {
+            "intent": "begroeting.hallo",
+            "domain": "default"
+          },
+          "gat,het,hoe": {
+            "intent": "begroeting.hoegaathet",
+            "domain": "default"
+          },
+          "gat,het,hoe,jou,met": {
+            "intent": "begroeting.hoegaathet",
+            "domain": "default"
+          },
+          "alles,goed": {
+            "intent": "begroeting.hoegaathet",
+            "domain": "default"
+          },
+          "ermee,gat,het,hoe": {
+            "intent": "begroeting.hoegaathet",
+            "domain": "default"
+          },
+          "broer,heb,hoevel,je": {
+            "intent": "informatie.broers",
+            "domain": "default"
+          },
+          "broer,heb,je,vel": {
+            "intent": "informatie.broers",
+            "domain": "default"
+          },
+          "een,familie,grot,heb,je": {
+            "intent": "informatie.familie",
+            "domain": "default"
+          },
+          "broer,en,heb,je,vel,zuss": {
+            "intent": "informatie.familie",
+            "domain": "default"
+          },
+          "een,grot,je,ouder,over,vertel": {
+            "intent": "informatie.grootouders",
+            "domain": "default"
+          },
+          "grot,hoe,je,ouder,zijn": {
+            "intent": "informatie.grootouders",
+            "domain": "default"
+          },
+          "is,je,moeder,person,vor,wat": {
+            "intent": "informatie.moeder",
+            "domain": "default"
+          },
+          "het,hoe,jij": {
+            "intent": "informatie.naam",
+            "domain": "default"
+          },
+          "hoe,je,noem": {
+            "intent": "informatie.naam",
+            "domain": "default"
+          },
+          "is,jou,nam,wat": {
+            "intent": "informatie.naam",
+            "domain": "default"
+          },
+          "is,je,person,vader,vor,wat": {
+            "intent": "informatie.vader",
+            "domain": "default"
+          },
+          "gat,het,hoe,je,met,vader": {
+            "intent": "informatie.vader",
+            "domain": "default"
+          },
+          "familie,heb,je,nog,vel,verder": {
+            "intent": "informatie.verderefamilie",
+            "domain": "default"
+          },
+          "een,familie,je,over,verder,vertel": {
+            "intent": "informatie.verderefamilie",
+            "domain": "default"
+          },
+          "en,heb,je,oom,tantes,vel": {
+            "intent": "informatie.verderefamilie",
+            "domain": "default"
+          },
+          "heb,je,vel,zuss": {
+            "intent": "informatie.zussen",
+            "domain": "default"
+          },
+          "heb,hoevel,je,zuss": {
+            "intent": "informatie.zussen",
+            "domain": "default"
+          },
+          "eet,grag,je,wat": {
+            "intent": "vragen.eten",
+            "domain": "default"
+          },
+          "eten,is,je,liefling,wat": {
+            "intent": "vragen.eten",
+            "domain": "default"
+          },
+          "hobbies,je,wat,zijn": {
+            "intent": "vragen.hobbies",
+            "domain": "default"
+          },
+          "doe,grag,in,je,tijd,vrij,wat": {
+            "intent": "vragen.hobbies",
+            "domain": "default"
+          },
+          "bezig,je,tijd,vij,wat,zijn,zoal": {
+            "intent": "vragen.hobbies",
+            "domain": "default"
+          },
+          "een,hond,je,over,vertel": {
+            "intent": "vragen.honden",
+            "domain": "default"
+          },
+          "heb,hoevel,hond,je": {
+            "intent": "vragen.honden",
+            "domain": "default"
+          },
+          "heb,huisdier,je": {
+            "intent": "vragen.huisdieren",
+            "domain": "default"
+          },
+          "een,huisdier,je,over,vertel": {
+            "intent": "vragen.huisdieren",
+            "domain": "default"
+          },
+          "een,je,kat,over,vertel": {
+            "intent": "vragen.katten",
+            "domain": "default"
+          },
+          "heb,je,kat,vel": {
+            "intent": "vragen.katten",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "begroeting.dag": "default",
+          "begroeting.hallo": "default",
+          "begroeting.hoegaathet": "default",
+          "informatie.broers": "default",
+          "informatie.familie": "default",
+          "informatie.grootouders": "default",
+          "informatie.moeder": "default",
+          "informatie.naam": "default",
+          "informatie.vader": "default",
+          "informatie.verderefamilie": "default",
+          "informatie.zussen": "default",
+          "vragen.eten": "default",
+          "vragen.hobbies": "default",
+          "vragen.honden": "default",
+          "vragen.huisdieren": "default",
+          "vragen.katten": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "doei",
+            "intent": "begroeting.dag"
+          },
+          {
+            "domain": "default",
+            "utterance": "dag",
+            "intent": "begroeting.dag"
+          },
+          {
+            "domain": "default",
+            "utterance": "tot ziens",
+            "intent": "begroeting.dag"
+          },
+          {
+            "domain": "default",
+            "utterance": "tot de volgende",
+            "intent": "begroeting.dag"
+          },
+          {
+            "domain": "default",
+            "utterance": "ciao",
+            "intent": "begroeting.dag"
+          },
+          {
+            "domain": "default",
+            "utterance": "hey",
+            "intent": "begroeting.hallo"
+          },
+          {
+            "domain": "default",
+            "utterance": "haai",
+            "intent": "begroeting.hallo"
+          },
+          {
+            "domain": "default",
+            "utterance": "hallo",
+            "intent": "begroeting.hallo"
+          },
+          {
+            "domain": "default",
+            "utterance": "hoi",
+            "intent": "begroeting.hallo"
+          },
+          {
+            "domain": "default",
+            "utterance": "goeie dag",
+            "intent": "begroeting.hallo"
+          },
+          {
+            "domain": "default",
+            "utterance": "Goedendag",
+            "intent": "begroeting.hallo"
+          },
+          {
+            "domain": "default",
+            "utterance": "hye",
+            "intent": "begroeting.hallo"
+          },
+          {
+            "domain": "default",
+            "utterance": "Hoe gaat het",
+            "intent": "begroeting.hoegaathet"
+          },
+          {
+            "domain": "default",
+            "utterance": "hoe gaat het met jou",
+            "intent": "begroeting.hoegaathet"
+          },
+          {
+            "domain": "default",
+            "utterance": "alles goed",
+            "intent": "begroeting.hoegaathet"
+          },
+          {
+            "domain": "default",
+            "utterance": "hoe gaat het ermee",
+            "intent": "begroeting.hoegaathet"
+          },
+          {
+            "domain": "default",
+            "utterance": "hoeveel broers heb je",
+            "intent": "informatie.broers"
+          },
+          {
+            "domain": "default",
+            "utterance": "heb je veel broers",
+            "intent": "informatie.broers"
+          },
+          {
+            "domain": "default",
+            "utterance": "heb je een groote familie",
+            "intent": "informatie.familie"
+          },
+          {
+            "domain": "default",
+            "utterance": "heb je veel broers en zussen",
+            "intent": "informatie.familie"
+          },
+          {
+            "domain": "default",
+            "utterance": "vertel eens over je groot ouders",
+            "intent": "informatie.grootouders"
+          },
+          {
+            "domain": "default",
+            "utterance": "hoe zijn je groot ouders",
+            "intent": "informatie.grootouders"
+          },
+          {
+            "domain": "default",
+            "utterance": "wat voor persoon is je moeder",
+            "intent": "informatie.moeder"
+          },
+          {
+            "domain": "default",
+            "utterance": "hoe heet jij",
+            "intent": "informatie.naam"
+          },
+          {
+            "domain": "default",
+            "utterance": "hoe noem je",
+            "intent": "informatie.naam"
+          },
+          {
+            "domain": "default",
+            "utterance": "wat is jou naam",
+            "intent": "informatie.naam"
+          },
+          {
+            "domain": "default",
+            "utterance": "wat voor persoon is je vader",
+            "intent": "informatie.vader"
+          },
+          {
+            "domain": "default",
+            "utterance": "hoe gaat het met je vader",
+            "intent": "informatie.vader"
+          },
+          {
+            "domain": "default",
+            "utterance": "heb je verder nog veel familie",
+            "intent": "informatie.verderefamilie"
+          },
+          {
+            "domain": "default",
+            "utterance": "vertel eens over je verdere familie",
+            "intent": "informatie.verderefamilie"
+          },
+          {
+            "domain": "default",
+            "utterance": "heb je veel ooms en tantes",
+            "intent": "informatie.verderefamilie"
+          },
+          {
+            "domain": "default",
+            "utterance": "heb je veel zussen",
+            "intent": "informatie.zussen"
+          },
+          {
+            "domain": "default",
+            "utterance": "hoeveel zussen heb je",
+            "intent": "informatie.zussen"
+          },
+          {
+            "domain": "default",
+            "utterance": "wat eet je graag",
+            "intent": "vragen.eten"
+          },
+          {
+            "domain": "default",
+            "utterance": "wat is je lieflings eten",
+            "intent": "vragen.eten"
+          },
+          {
+            "domain": "default",
+            "utterance": "wat zijn je hobbies",
+            "intent": "vragen.hobbies"
+          },
+          {
+            "domain": "default",
+            "utterance": "wat doe je graag in je vrije tijd",
+            "intent": "vragen.hobbies"
+          },
+          {
+            "domain": "default",
+            "utterance": "wat zijn zoal je vije tijds bezigheden",
+            "intent": "vragen.hobbies"
+          },
+          {
+            "domain": "default",
+            "utterance": "vertel eens over je honden",
+            "intent": "vragen.honden"
+          },
+          {
+            "domain": "default",
+            "utterance": "hoeveel honden heb je",
+            "intent": "vragen.honden"
+          },
+          {
+            "domain": "default",
+            "utterance": "heb je huisdieren",
+            "intent": "vragen.huisdieren"
+          },
+          {
+            "domain": "default",
+            "utterance": "vertel eens over je huisdieren",
+            "intent": "vragen.huisdieren"
+          },
+          {
+            "domain": "default",
+            "utterance": "vertel eens over je katten",
+            "intent": "vragen.katten"
+          },
+          {
+            "domain": "default",
+            "utterance": "heb je veel katten",
+            "intent": "vragen.katten"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "nl",
+              "tag": "nlu-nl",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "doei": 1,
+              "dag": 1,
+              "tot": 1,
+              "zien": 1,
+              "de": 1,
+              "volgend": 1,
+              "ciao": 1,
+              "hey": 1,
+              "haai": 1,
+              "hallo": 1,
+              "hoi": 1,
+              "goei": 1,
+              "goedendag": 1,
+              "hye": 1,
+              "hoe": 1,
+              "gat": 1,
+              "het": 1,
+              "met": 1,
+              "jou": 1,
+              "alles": 1,
+              "goed": 1,
+              "ermee": 1,
+              "hoevel": 1,
+              "broer": 1,
+              "heb": 1,
+              "je": 1,
+              "vel": 1,
+              "een": 1,
+              "grot": 1,
+              "familie": 1,
+              "en": 1,
+              "zuss": 1,
+              "vertel": 1,
+              "over": 1,
+              "ouder": 1,
+              "zijn": 1,
+              "wat": 1,
+              "vor": 1,
+              "person": 1,
+              "is": 1,
+              "moeder": 1,
+              "jij": 1,
+              "noem": 1,
+              "nam": 1,
+              "vader": 1,
+              "verder": 1,
+              "nog": 1,
+              "oom": 1,
+              "tantes": 1,
+              "eet": 1,
+              "grag": 1,
+              "liefling": 1,
+              "eten": 1,
+              "hobbies": 1,
+              "doe": 1,
+              "in": 1,
+              "vrij": 1,
+              "tijd": 1,
+              "zoal": 1,
+              "vij": 1,
+              "bezig": 1,
+              "hond": 1,
+              "huisdier": 1,
+              "kat": 1
+            },
+            "intents": {
+              "begroeting.dag": 1,
+              "begroeting.hallo": 1,
+              "begroeting.hoegaathet": 1,
+              "informatie.broers": 1,
+              "informatie.familie": 1,
+              "informatie.grootouders": 1,
+              "informatie.moeder": 1,
+              "informatie.naam": 1,
+              "informatie.vader": 1,
+              "informatie.verderefamilie": 1,
+              "informatie.zussen": 1,
+              "vragen.eten": 1,
+              "vragen.hobbies": 1,
+              "vragen.honden": 1,
+              "vragen.huisdieren": 1,
+              "vragen.katten": 1
+            },
+            "intentFeatures": {
+              "begroeting.dag": {
+                "doei": 1,
+                "dag": 1,
+                "tot": 1,
+                "zien": 1,
+                "de": 1,
+                "volgend": 1,
+                "ciao": 1
+              },
+              "begroeting.hallo": {
+                "hey": 1,
+                "haai": 1,
+                "hallo": 1,
+                "hoi": 1,
+                "goei": 1,
+                "dag": 1,
+                "goedendag": 1,
+                "hye": 1
+              },
+              "begroeting.hoegaathet": {
+                "hoe": 1,
+                "gat": 1,
+                "het": 1,
+                "met": 1,
+                "jou": 1,
+                "alles": 1,
+                "goed": 1,
+                "ermee": 1
+              },
+              "informatie.broers": {
+                "hoevel": 1,
+                "broer": 1,
+                "heb": 1,
+                "je": 1,
+                "vel": 1
+              },
+              "informatie.familie": {
+                "heb": 1,
+                "je": 1,
+                "een": 1,
+                "grot": 1,
+                "familie": 1,
+                "vel": 1,
+                "broer": 1,
+                "en": 1,
+                "zuss": 1
+              },
+              "informatie.grootouders": {
+                "vertel": 1,
+                "een": 1,
+                "over": 1,
+                "je": 1,
+                "grot": 1,
+                "ouder": 1,
+                "hoe": 1,
+                "zijn": 1
+              },
+              "informatie.moeder": {
+                "wat": 1,
+                "vor": 1,
+                "person": 1,
+                "is": 1,
+                "je": 1,
+                "moeder": 1
+              },
+              "informatie.naam": {
+                "hoe": 1,
+                "het": 1,
+                "jij": 1,
+                "noem": 1,
+                "je": 1,
+                "wat": 1,
+                "is": 1,
+                "jou": 1,
+                "nam": 1
+              },
+              "informatie.vader": {
+                "wat": 1,
+                "vor": 1,
+                "person": 1,
+                "is": 1,
+                "je": 1,
+                "vader": 1,
+                "hoe": 1,
+                "gat": 1,
+                "het": 1,
+                "met": 1
+              },
+              "informatie.verderefamilie": {
+                "heb": 1,
+                "je": 1,
+                "verder": 1,
+                "nog": 1,
+                "vel": 1,
+                "familie": 1,
+                "vertel": 1,
+                "een": 1,
+                "over": 1,
+                "oom": 1,
+                "en": 1,
+                "tantes": 1
+              },
+              "informatie.zussen": {
+                "heb": 1,
+                "je": 1,
+                "vel": 1,
+                "zuss": 1,
+                "hoevel": 1
+              },
+              "vragen.eten": {
+                "wat": 1,
+                "eet": 1,
+                "je": 1,
+                "grag": 1,
+                "is": 1,
+                "liefling": 1,
+                "eten": 1
+              },
+              "vragen.hobbies": {
+                "wat": 1,
+                "zijn": 1,
+                "je": 1,
+                "hobbies": 1,
+                "doe": 1,
+                "grag": 1,
+                "in": 1,
+                "vrij": 1,
+                "tijd": 1,
+                "zoal": 1,
+                "vij": 1,
+                "bezig": 1
+              },
+              "vragen.honden": {
+                "vertel": 1,
+                "een": 1,
+                "over": 1,
+                "je": 1,
+                "hond": 1,
+                "hoevel": 1,
+                "heb": 1
+              },
+              "vragen.huisdieren": {
+                "heb": 1,
+                "je": 1,
+                "huisdier": 1,
+                "vertel": 1,
+                "een": 1,
+                "over": 1
+              },
+              "vragen.katten": {
+                "vertel": 1,
+                "een": 1,
+                "over": 1,
+                "je": 1,
+                "kat": 1,
+                "heb": 1,
+                "vel": 1
+              }
+            },
+            "featuresToIntent": {
+              "doei": [
+                "begroeting.dag"
+              ],
+              "dag": [
+                "begroeting.dag",
+                "begroeting.hallo"
+              ],
+              "tot": [
+                "begroeting.dag"
+              ],
+              "zien": [
+                "begroeting.dag"
+              ],
+              "de": [
+                "begroeting.dag"
+              ],
+              "volgend": [
+                "begroeting.dag"
+              ],
+              "ciao": [
+                "begroeting.dag"
+              ],
+              "hey": [
+                "begroeting.hallo"
+              ],
+              "haai": [
+                "begroeting.hallo"
+              ],
+              "hallo": [
+                "begroeting.hallo"
+              ],
+              "hoi": [
+                "begroeting.hallo"
+              ],
+              "goei": [
+                "begroeting.hallo"
+              ],
+              "goedendag": [
+                "begroeting.hallo"
+              ],
+              "hye": [
+                "begroeting.hallo"
+              ],
+              "hoe": [
+                "begroeting.hoegaathet",
+                "informatie.grootouders",
+                "informatie.naam",
+                "informatie.vader"
+              ],
+              "gat": [
+                "begroeting.hoegaathet",
+                "informatie.vader"
+              ],
+              "het": [
+                "begroeting.hoegaathet",
+                "informatie.naam",
+                "informatie.vader"
+              ],
+              "met": [
+                "begroeting.hoegaathet",
+                "informatie.vader"
+              ],
+              "jou": [
+                "begroeting.hoegaathet",
+                "informatie.naam"
+              ],
+              "alles": [
+                "begroeting.hoegaathet"
+              ],
+              "goed": [
+                "begroeting.hoegaathet"
+              ],
+              "ermee": [
+                "begroeting.hoegaathet"
+              ],
+              "hoevel": [
+                "informatie.broers",
+                "informatie.zussen",
+                "vragen.honden"
+              ],
+              "broer": [
+                "informatie.broers",
+                "informatie.familie"
+              ],
+              "heb": [
+                "informatie.broers",
+                "informatie.familie",
+                "informatie.verderefamilie",
+                "informatie.zussen",
+                "vragen.honden",
+                "vragen.huisdieren",
+                "vragen.katten"
+              ],
+              "je": [
+                "informatie.broers",
+                "informatie.familie",
+                "informatie.grootouders",
+                "informatie.moeder",
+                "informatie.naam",
+                "informatie.vader",
+                "informatie.verderefamilie",
+                "informatie.zussen",
+                "vragen.eten",
+                "vragen.hobbies",
+                "vragen.honden",
+                "vragen.huisdieren",
+                "vragen.katten"
+              ],
+              "vel": [
+                "informatie.broers",
+                "informatie.familie",
+                "informatie.verderefamilie",
+                "informatie.zussen",
+                "vragen.katten"
+              ],
+              "een": [
+                "informatie.familie",
+                "informatie.grootouders",
+                "informatie.verderefamilie",
+                "vragen.honden",
+                "vragen.huisdieren",
+                "vragen.katten"
+              ],
+              "grot": [
+                "informatie.familie",
+                "informatie.grootouders"
+              ],
+              "familie": [
+                "informatie.familie",
+                "informatie.verderefamilie"
+              ],
+              "en": [
+                "informatie.familie",
+                "informatie.verderefamilie"
+              ],
+              "zuss": [
+                "informatie.familie",
+                "informatie.zussen"
+              ],
+              "vertel": [
+                "informatie.grootouders",
+                "informatie.verderefamilie",
+                "vragen.honden",
+                "vragen.huisdieren",
+                "vragen.katten"
+              ],
+              "over": [
+                "informatie.grootouders",
+                "informatie.verderefamilie",
+                "vragen.honden",
+                "vragen.huisdieren",
+                "vragen.katten"
+              ],
+              "ouder": [
+                "informatie.grootouders"
+              ],
+              "zijn": [
+                "informatie.grootouders",
+                "vragen.hobbies"
+              ],
+              "wat": [
+                "informatie.moeder",
+                "informatie.naam",
+                "informatie.vader",
+                "vragen.eten",
+                "vragen.hobbies"
+              ],
+              "vor": [
+                "informatie.moeder",
+                "informatie.vader"
+              ],
+              "person": [
+                "informatie.moeder",
+                "informatie.vader"
+              ],
+              "is": [
+                "informatie.moeder",
+                "informatie.naam",
+                "informatie.vader",
+                "vragen.eten"
+              ],
+              "moeder": [
+                "informatie.moeder"
+              ],
+              "jij": [
+                "informatie.naam"
+              ],
+              "noem": [
+                "informatie.naam"
+              ],
+              "nam": [
+                "informatie.naam"
+              ],
+              "vader": [
+                "informatie.vader"
+              ],
+              "verder": [
+                "informatie.verderefamilie"
+              ],
+              "nog": [
+                "informatie.verderefamilie"
+              ],
+              "oom": [
+                "informatie.verderefamilie"
+              ],
+              "tantes": [
+                "informatie.verderefamilie"
+              ],
+              "eet": [
+                "vragen.eten"
+              ],
+              "grag": [
+                "vragen.eten",
+                "vragen.hobbies"
+              ],
+              "liefling": [
+                "vragen.eten"
+              ],
+              "eten": [
+                "vragen.eten"
+              ],
+              "hobbies": [
+                "vragen.hobbies"
+              ],
+              "doe": [
+                "vragen.hobbies"
+              ],
+              "in": [
+                "vragen.hobbies"
+              ],
+              "vrij": [
+                "vragen.hobbies"
+              ],
+              "tijd": [
+                "vragen.hobbies"
+              ],
+              "zoal": [
+                "vragen.hobbies"
+              ],
+              "vij": [
+                "vragen.hobbies"
+              ],
+              "bezig": [
+                "vragen.hobbies"
+              ],
+              "hond": [
+                "vragen.honden"
+              ],
+              "huisdier": [
+                "vragen.huisdieren"
+              ],
+              "kat": [
+                "vragen.katten"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "nl",
+                "tag": "nlu-nl",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "doei",
+                "dag",
+                "tot",
+                "zien",
+                "de",
+                "volgend",
+                "ciao",
+                "hey",
+                "haai",
+                "hallo",
+                "hoi",
+                "goei",
+                "goedendag",
+                "hye",
+                "hoe",
+                "gat",
+                "het",
+                "met",
+                "jou",
+                "alles",
+                "goed",
+                "ermee",
+                "hoevel",
+                "broer",
+                "heb",
+                "je",
+                "vel",
+                "een",
+                "grot",
+                "familie",
+                "en",
+                "zuss",
+                "vertel",
+                "over",
+                "ouder",
+                "zijn",
+                "wat",
+                "vor",
+                "person",
+                "is",
+                "moeder",
+                "jij",
+                "noem",
+                "nam",
+                "vader",
+                "verder",
+                "nog",
+                "oom",
+                "tantes",
+                "eet",
+                "grag",
+                "liefling",
+                "eten",
+                "hobbies",
+                "doe",
+                "in",
+                "vrij",
+                "tijd",
+                "zoal",
+                "vij",
+                "bezig",
+                "hond",
+                "huisdier",
+                "kat"
+              ],
+              "intents": [
+                "begroeting.dag",
+                "begroeting.hallo",
+                "begroeting.hoegaathet",
+                "informatie.broers",
+                "informatie.familie",
+                "informatie.grootouders",
+                "informatie.moeder",
+                "informatie.naam",
+                "informatie.vader",
+                "informatie.verderefamilie",
+                "informatie.zussen",
+                "vragen.eten",
+                "vragen.hobbies",
+                "vragen.honden",
+                "vragen.huisdieren",
+                "vragen.katten"
+              ],
+              "perceptrons": [
+                [
+                  10.5369291305542,
+                  9.069228172302246,
+                  6.281553745269775,
+                  4.189487934112549,
+                  2.092754602432251,
+                  2.092754602432251,
+                  10.438135147094727,
+                  -3.7815215587615967,
+                  -3.7754507064819336,
+                  -3.7689871788024902,
+                  -3.7621278762817383,
+                  -12.046608924865723,
+                  -3.6971988677978516,
+                  -3.6885273456573486,
+                  -1.6028028726577759,
+                  -0.7635163068771362,
+                  -1.4625815153121948,
+                  -0.16614216566085815,
+                  -0.9213226437568665,
+                  -1.873563528060913,
+                  -1.873563528060913,
+                  -0.14793899655342102,
+                  -0.29336512088775635,
+                  -0.43004125356674194,
+                  -1.1315234899520874,
+                  -2.2203383445739746,
+                  -0.31359943747520447,
+                  -0.5635552406311035,
+                  -0.30093783140182495,
+                  -0.20864592492580414,
+                  -0.10058977454900742,
+                  -0.1353113204240799,
+                  -0.4333881437778473,
+                  -0.4333881437778473,
+                  -0.1718253493309021,
+                  -0.1989128738641739,
+                  -1.2293477058410645,
+                  -0.14739111065864563,
+                  -0.14739111065864563,
+                  -0.897023618221283,
+                  -0.1017436757683754,
+                  -0.6912254691123962,
+                  -0.08074171096086502,
+                  -0.7141802906990051,
+                  -0.025431182235479355,
+                  -0.07914210855960846,
+                  -0.014609696343541145,
+                  -0.029361998662352562,
+                  -0.029361998662352562,
+                  -0.13695308566093445,
+                  -0.18259656429290771,
+                  -0.010199538432061672,
+                  -0.010199538432061672,
+                  -0.11953270435333252,
+                  -0.03852544724941254,
+                  -0.03852544724941254,
+                  -0.03852544724941254,
+                  -0.07083966583013535,
+                  -0.024172648787498474,
+                  -0.024172648787498474,
+                  -0.024172648787498474,
+                  -0.1228119432926178,
+                  -0.40777069330215454,
+                  -0.11369749158620834,
+                  3.7675078432339393
+                ],
+                [
+                  -6.522201061248779,
+                  -5.138582706451416,
+                  -3.964512348175049,
+                  -2.5610296726226807,
+                  -1.3941158056259155,
+                  -1.3941158056259155,
+                  -6.42082405090332,
+                  7.790049076080322,
+                  7.788525581359863,
+                  7.7802042961120605,
+                  7.771193981170654,
+                  12.181360244750977,
+                  7.707417964935303,
+                  7.696040153503418,
+                  -3.0208699703216553,
+                  -1.6200733184814453,
+                  -2.720349073410034,
+                  -0.3306967616081238,
+                  -1.6770503520965576,
+                  -3.3824362754821777,
+                  -3.3824362754821777,
+                  -0.3023207187652588,
+                  -0.6082841157913208,
+                  -0.8831881880760193,
+                  -2.0791513919830322,
+                  -4.158252239227295,
+                  -0.6750732064247131,
+                  -1.0339747667312622,
+                  -0.6341674327850342,
+                  -0.44245168566703796,
+                  -0.21983149647712708,
+                  -0.31053251028060913,
+                  -0.7726504802703857,
+                  -0.7726504802703857,
+                  -0.3672904670238495,
+                  -0.3612334132194519,
+                  -2.2652475833892822,
+                  -0.29221320152282715,
+                  -0.29221320152282715,
+                  -1.6259979009628296,
+                  -0.20284773409366608,
+                  -1.0803881883621216,
+                  -0.1751762479543686,
+                  -1.2612910270690918,
+                  -0.049868397414684296,
+                  -0.1809091866016388,
+                  -0.03827529400587082,
+                  -0.07927794754505157,
+                  -0.07927794754505157,
+                  -0.2613341212272644,
+                  -0.36054500937461853,
+                  -0.020003821700811386,
+                  -0.020003821700811386,
+                  -0.2000904381275177,
+                  -0.07921522110700607,
+                  -0.07921522110700607,
+                  -0.07921522110700607,
+                  -0.14690768718719482,
+                  -0.050112903118133545,
+                  -0.050112903118133545,
+                  -0.050112903118133545,
+                  -0.23823067545890808,
+                  -0.571230947971344,
+                  -0.11088010668754578,
+                  6.496284296010954
+                ],
+                [
+                  -0.605909526348114,
+                  -0.6278870701789856,
+                  -0.4749356210231781,
+                  -0.2783465087413788,
+                  -0.18649543821811676,
+                  -0.18649543821811676,
+                  -0.6041799783706665,
+                  -0.603664755821228,
+                  -0.603094756603241,
+                  -0.602469265460968,
+                  -0.6017866730690002,
+                  -0.16874803602695465,
+                  -0.6009786128997803,
+                  -0.6001667976379395,
+                  1.9801687002182007,
+                  8.28341007232666,
+                  2.8732612133026123,
+                  -1.8043962717056274,
+                  2.3535335063934326,
+                  6.829288959503174,
+                  6.829288959503174,
+                  0.7265381217002869,
+                  -0.10901141166687012,
+                  -0.2846859395503998,
+                  -0.3857555687427521,
+                  -6.699630260467529,
+                  -0.119039386510849,
+                  -0.11933185160160065,
+                  -0.5312147736549377,
+                  -0.051073107868433,
+                  -0.03139793500304222,
+                  -0.03139793500304222,
+                  -0.0427221916615963,
+                  -0.0427221916615963,
+                  -0.4322606325149536,
+                  -0.35215654969215393,
+                  -1.1383763551712036,
+                  -0.03203856945037842,
+                  -0.03203856945037842,
+                  -1.1383763551712036,
+                  -0.03203856945037842,
+                  -5.401703357696533,
+                  -0.3298787474632263,
+                  -1.0742993354797363,
+                  -5.227407455444336,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0.607915331174417
+                ],
+                [
+                  -0.0011630539083853364,
+                  -0.0014664395712316036,
+                  -0.0013105367543175817,
+                  -0.0007012346177361906,
+                  -0.0005083815776742995,
+                  -0.0005083815776742995,
+                  -0.0010560628725215793,
+                  -0.0010222294367849827,
+                  -0.0009894371032714844,
+                  -0.0009576556622050703,
+                  -0.0009268560097552836,
+                  -0.0004666181921493262,
+                  -0.0009162037749774754,
+                  -0.0008884695707820356,
+                  -0.5711064338684082,
+                  -0.1154143437743187,
+                  -0.14769311249256134,
+                  -0.1154143437743187,
+                  -0.009408208541572094,
+                  -0.0006480516167357564,
+                  -0.0006480516167357564,
+                  0,
+                  1.753719687461853,
+                  11.467429161071777,
+                  1.1682394742965698,
+                  0.03147406131029129,
+                  1.342197299003601,
+                  -0.7077505588531494,
+                  -0.8458308577537537,
+                  -1.3396680355072021,
+                  -6.59908390045166,
+                  -7.328341960906982,
+                  -0.10061821341514587,
+                  -0.10061821341514587,
+                  -0.23013553023338318,
+                  -0.1575676053762436,
+                  -0.4264492690563202,
+                  -0.24602390825748444,
+                  -0.24602390825748444,
+                  -0.2673911154270172,
+                  -0.15599389374256134,
+                  -0.020927669480443,
+                  -0.2546123266220093,
+                  -0.009408208541572094,
+                  -0.19701449573040009,
+                  -0.7194074988365173,
+                  -0.7194074988365173,
+                  -0.3848693072795868,
+                  -0.3848693072795868,
+                  -0.06537097692489624,
+                  -0.09585218131542206,
+                  0,
+                  0,
+                  -0.019322950392961502,
+                  -0.020292658358812332,
+                  -0.020292658358812332,
+                  -0.020292658358812332,
+                  -0.025373311713337898,
+                  -0.0007152758189477026,
+                  -0.0007152758189477026,
+                  -0.0007152758189477026,
+                  -3.509479284286499,
+                  -1.316131591796875,
+                  -2.4379310607910156,
+                  -0.014683638498196616
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.5722751021385193,
+                  -0.060228653252124786,
+                  -0.08927469700574875,
+                  -0.060228653252124786,
+                  -0.010935173369944096,
+                  0,
+                  0,
+                  0,
+                  -3.1104419231414795,
+                  4.604917526245117,
+                  1.4385823011398315,
+                  -2.016552448272705,
+                  -2.8121395111083984,
+                  4.685232639312744,
+                  5.598372936248779,
+                  5.5953898429870605,
+                  9.379419326782227,
+                  4.547397613525391,
+                  -2.7140614986419678,
+                  -2.7140614986419678,
+                  -1.8000001907348633,
+                  -0.3434520363807678,
+                  -0.16411277651786804,
+                  -0.1320827454328537,
+                  -0.1320827454328537,
+                  -0.16411277651786804,
+                  -0.06250913441181183,
+                  -0.016597740352153778,
+                  -0.08315405249595642,
+                  -0.010935173369944096,
+                  -0.12728697061538696,
+                  -1.8030433654785156,
+                  -0.5378572940826416,
+                  -2.4757425785064697,
+                  -2.4757425785064697,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.0164908766746521,
+                  -0.023483116179704666,
+                  -0.14682286977767944,
+                  -1.0384069720116293
+                ],
+                [
+                  -0.00019581944798119366,
+                  -0.0004070029826834798,
+                  -0.0004343000764492899,
+                  -0.0001797474833438173,
+                  -0.00016467884415760636,
+                  -0.00016467884415760636,
+                  -0.0001653104554861784,
+                  -0.00015838127001188695,
+                  -0.0001517425407655537,
+                  -0.0001453820732422173,
+                  -0.0001392882113577798,
+                  -0.000125585836940445,
+                  -0.00012818571121897548,
+                  -0.00012281264935154468,
+                  0.8057242631912231,
+                  -0.39504384994506836,
+                  -0.7715476751327515,
+                  -0.32753318548202515,
+                  -0.02995770424604416,
+                  0,
+                  0,
+                  -0.007712222170084715,
+                  -0.07565172761678696,
+                  0,
+                  -2.03035831451416,
+                  -0.7591890692710876,
+                  -0.34627026319503784,
+                  -0.2172703742980957,
+                  5.848325729370117,
+                  -2.243434429168701,
+                  -0.07926176488399506,
+                  -0.1606338620185852,
+                  1.3113774061203003,
+                  1.3113774061203003,
+                  7.376945495605469,
+                  1.614021897315979,
+                  -1.2431089878082275,
+                  -0.28972098231315613,
+                  -0.28972098231315613,
+                  -0.3742530345916748,
+                  -0.13232938945293427,
+                  -0.30564337968826294,
+                  -0.7654228210449219,
+                  -0.013728687539696693,
+                  -0.456161230802536,
+                  -0.609137773513794,
+                  -0.11621279269456863,
+                  -0.07926176488399506,
+                  -0.07926176488399506,
+                  -0.046576157212257385,
+                  -0.05628479644656181,
+                  -0.011475998908281326,
+                  -0.011475998908281326,
+                  -0.43729761242866516,
+                  -0.0036173947155475616,
+                  -0.0036173947155475616,
+                  -0.0036173947155475616,
+                  -0.25673288106918335,
+                  -0.24972417950630188,
+                  -0.24972417950630188,
+                  -0.24972417950630188,
+                  -1.0490862131118774,
+                  -1.049415111541748,
+                  -1.045486569404602,
+                  -0.5967491190048706
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.31215184926986694,
+                  -0.033435821533203125,
+                  -0.09874898940324783,
+                  -0.033435821533203125,
+                  -0.6559063792228699,
+                  0,
+                  0,
+                  0,
+                  -0.044944025576114655,
+                  0,
+                  -0.23686909675598145,
+                  0.3800632953643799,
+                  -0.1821252554655075,
+                  -0.07020298391580582,
+                  0,
+                  -0.14642179012298584,
+                  -0.04523791745305061,
+                  -0.08945364505052567,
+                  -0.07020298391580582,
+                  -0.07020298391580582,
+                  0,
+                  -0.2709414064884186,
+                  0.2969875633716583,
+                  2.3025307655334473,
+                  2.3025307655334473,
+                  0.9174103736877441,
+                  8.242196083068848,
+                  -0.04321299493312836,
+                  -0.18668363988399506,
+                  -0.6559063792228699,
+                  -6.0049285888671875,
+                  -0.14642179012298584,
+                  -0.06404072046279907,
+                  -0.04523791745305061,
+                  -0.04523791745305061,
+                  -0.2628786861896515,
+                  -0.325743168592453,
+                  -0.7085546255111694,
+                  -0.7085546255111694,
+                  -0.2277703434228897,
+                  -0.04088396951556206,
+                  -0.04088396951556206,
+                  -0.04088396951556206,
+                  -0.1012536883354187,
+                  -0.042293958365917206,
+                  -0.042293958365917206,
+                  -0.042293958365917206,
+                  -0.00009847230830928311,
+                  0,
+                  0,
+                  -0.17818046460183373
+                ],
+                [
+                  -0.566645622253418,
+                  -0.5994304418563843,
+                  -0.48130378127098083,
+                  -0.2699733078479767,
+                  -0.1900886446237564,
+                  -0.1900886446237564,
+                  -0.5533196330070496,
+                  -0.5491552948951721,
+                  -0.5457289218902588,
+                  -0.5428335666656494,
+                  -0.5408061742782593,
+                  -0.16979360580444336,
+                  -0.5393029451370239,
+                  -0.5387524366378784,
+                  6.231205940246582,
+                  -7.009070873260498,
+                  0.24918784201145172,
+                  -3.556255578994751,
+                  3.435868978500366,
+                  -0.2691182792186737,
+                  -0.2691182792186737,
+                  -0.782310426235199,
+                  -0.12504065036773682,
+                  0,
+                  -0.5684394836425781,
+                  -0.42819008231163025,
+                  -0.40312880277633667,
+                  -0.15647147595882416,
+                  -1.9606813192367554,
+                  -0.3423910140991211,
+                  -0.10001591593027115,
+                  -0.2334955781698227,
+                  -0.15647147595882416,
+                  -0.15647147595882416,
+                  -1.9606813192367554,
+                  -2.4191720485687256,
+                  1.3598136901855469,
+                  -1.638698697090149,
+                  -1.638698697090149,
+                  2.630769729614258,
+                  -0.8230584859848022,
+                  7.2586140632629395,
+                  7.9425787925720215,
+                  6.320037841796875,
+                  -1.466818928718567,
+                  -0.3423910140991211,
+                  -0.13059620559215546,
+                  -0.10001591593027115,
+                  -0.10001591593027115,
+                  -0.6578875184059143,
+                  -0.8124567866325378,
+                  -2.0505714416503906,
+                  -2.0505714416503906,
+                  -0.33144479990005493,
+                  -0.14456231892108917,
+                  -0.14456231892108917,
+                  -0.14456231892108917,
+                  -0.24973560869693756,
+                  -0.0803380161523819,
+                  -0.0803380161523819,
+                  -0.0803380161523819,
+                  0,
+                  0,
+                  0,
+                  0.5388481106978682
+                ],
+                [
+                  -0.006275148596614599,
+                  -0.013042649254202843,
+                  -0.013917399570345879,
+                  -0.00576011324301362,
+                  -0.005277229472994804,
+                  -0.005277229472994804,
+                  -0.00529747037217021,
+                  -0.005075420718640089,
+                  -0.004862678237259388,
+                  -0.004658853635191917,
+                  -0.004463572520762682,
+                  -0.0040244716219604015,
+                  -0.004107785876840353,
+                  -0.003935603424906731,
+                  -0.33879849314689636,
+                  0.6191274523735046,
+                  0.4682570993900299,
+                  2.4375102519989014,
+                  -2.3029708862304688,
+                  0,
+                  0,
+                  -0.5900676250457764,
+                  -0.19969569146633148,
+                  0,
+                  -0.9734356999397278,
+                  2.025104522705078,
+                  -0.618285059928894,
+                  -0.3701086640357971,
+                  -0.19264483451843262,
+                  -0.38792330026626587,
+                  -0.19107010960578918,
+                  -0.40214499831199646,
+                  -0.3701086640357971,
+                  -0.3701086640357971,
+                  -0.19264483451843262,
+                  -0.7370272278785706,
+                  -0.5610821843147278,
+                  1.527969241142273,
+                  1.527969241142273,
+                  0.672424852848053,
+                  -3.9881815910339355,
+                  -0.12137414515018463,
+                  -0.6020378470420837,
+                  0,
+                  10.262693405151367,
+                  -0.38792330026626587,
+                  -0.1295456439256668,
+                  -0.19107010960578918,
+                  -0.19107010960578918,
+                  -0.39122703671455383,
+                  -0.626492977142334,
+                  -0.8143509030342102,
+                  -0.8143509030342102,
+                  -0.3495338559150696,
+                  -0.15416011214256287,
+                  -0.15416011214256287,
+                  -0.15416011214256287,
+                  -0.3192766010761261,
+                  -0.11218169331550598,
+                  -0.11218169331550598,
+                  -0.11218169331550598,
+                  -0.08376644551753998,
+                  -0.0932416096329689,
+                  -0.02328389696776867,
+                  -1.1854572507804313
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.8003878593444824,
+                  -1.954323410987854,
+                  -1.1856499910354614,
+                  -0.6056637167930603,
+                  2.389112949371338,
+                  -0.5793032050132751,
+                  -2.371927499771118,
+                  5.045825004577637,
+                  4.0302629470825195,
+                  -2.694648027420044,
+                  1.694573998451233,
+                  1.694573998451233,
+                  -0.07143700122833252,
+                  -0.2965204119682312,
+                  -1.0724685192108154,
+                  0,
+                  0,
+                  -0.19202791154384613,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  7.319551467895508,
+                  1.6381750106811523,
+                  4.977344512939453,
+                  4.977344512939453,
+                  -0.22146160900592804,
+                  -0.4069417715072632,
+                  -0.19202791154384613,
+                  -0.19202791154384613,
+                  -0.15880249440670013,
+                  -0.10151558369398117,
+                  -0.10151558369398117,
+                  -0.10151558369398117,
+                  -0.21847066283226013,
+                  -0.07724595814943314,
+                  -0.07724595814943314,
+                  -0.07724595814943314,
+                  -1.8980480432510376,
+                  -1.898292899131775,
+                  -1.8966833353042603,
+                  -0.3030241401740078
+                ],
+                [
+                  -0.014743087813258171,
+                  -0.026301736012101173,
+                  -0.027314815670251846,
+                  -0.012399137951433659,
+                  -0.010697133839130402,
+                  -0.010697133839130402,
+                  -0.012677439488470554,
+                  -0.012166688218712807,
+                  -0.011676490306854248,
+                  -0.011206021532416344,
+                  -0.010754486545920372,
+                  -0.008426647633314133,
+                  -0.009982947260141373,
+                  -0.009580581448972225,
+                  -0.02065970189869404,
+                  -0.01681610941886902,
+                  -0.01681610941886902,
+                  -0.003557136980816722,
+                  -0.003557136980816722,
+                  -0.00844121165573597,
+                  -0.00844121165573597,
+                  -0.0031965896487236023,
+                  1.722957730293274,
+                  -7.695372581481934,
+                  1.3396940231323242,
+                  0.07125929743051529,
+                  1.370523452758789,
+                  -0.5820931792259216,
+                  -0.3012973964214325,
+                  -1.0950998067855835,
+                  -6.227815628051758,
+                  11.315494537353516,
+                  -0.2588307857513428,
+                  -0.2588307857513428,
+                  0,
+                  -0.28434908390045166,
+                  -0.9089953303337097,
+                  0,
+                  0,
+                  -0.1506505161523819,
+                  0,
+                  0,
+                  -0.0030482332222163677,
+                  0,
+                  0,
+                  -0.7842076420783997,
+                  -0.7842076420783997,
+                  -0.015191667713224888,
+                  -0.015191667713224888,
+                  -0.13553257286548615,
+                  -0.30236661434173584,
+                  -0.1506505161523819,
+                  -0.1506505161523819,
+                  -0.14215733110904694,
+                  -0.10763422399759293,
+                  -0.10763422399759293,
+                  -0.10763422399759293,
+                  -0.23626087605953217,
+                  -0.0833180844783783,
+                  -0.0833180844783783,
+                  -0.0833180844783783,
+                  -3.5331766605377197,
+                  -1.4801440238952637,
+                  -2.6285812854766846,
+                  -0.07668834384081338
+                ],
+                [
+                  -0.04961519315838814,
+                  -0.07067682594060898,
+                  -0.06806719303131104,
+                  -0.03450549393892288,
+                  -0.024594895541667938,
+                  -0.024594895541667938,
+                  -0.04371214285492897,
+                  -0.04209177568554878,
+                  -0.040530819445848465,
+                  -0.0390271358191967,
+                  -0.03757864981889725,
+                  -0.023128347471356392,
+                  -0.035275671631097794,
+                  -0.03396408259868622,
+                  -0.8312464356422424,
+                  -0.05101289972662926,
+                  -0.05101289972662926,
+                  -0.026507386937737465,
+                  -1.6438329219818115,
+                  -0.025675509124994278,
+                  -0.025675509124994278,
+                  -0.005848395638167858,
+                  -0.3632057309150696,
+                  -0.23492760956287384,
+                  -1.158097505569458,
+                  1.7954288721084595,
+                  -0.36615312099456787,
+                  -0.5166440010070801,
+                  -0.09475307166576385,
+                  -0.054311200976371765,
+                  -0.04112078249454498,
+                  -0.06711379438638687,
+                  -0.49326542019844055,
+                  -0.49326542019844055,
+                  -0.07132872939109802,
+                  -2.360358238220215,
+                  2.6096596717834473,
+                  -2.0908219814300537,
+                  -2.0908219814300537,
+                  0.8776708245277405,
+                  -1.2013530731201172,
+                  0,
+                  -0.7571702599525452,
+                  -1.6364859342575073,
+                  -0.8941033482551575,
+                  -0.03093288093805313,
+                  -0.018173834308981895,
+                  -0.013785159215331078,
+                  -0.013785159215331078,
+                  6.014776229858398,
+                  4.07283353805542,
+                  4.60498046875,
+                  4.60498046875,
+                  -1.837715744972229,
+                  -1.941946029663086,
+                  -1.941946029663086,
+                  -1.941946029663086,
+                  -2.4450719356536865,
+                  -0.43394437432289124,
+                  -0.43394437432289124,
+                  -0.43394437432289124,
+                  -0.45363011956214905,
+                  -0.4996829330921173,
+                  -0.2774040400981903,
+                  -0.20700811564324145
+                ],
+                [
+                  -0.07278752326965332,
+                  -0.10693255811929703,
+                  -0.11342233419418335,
+                  -0.04887295886874199,
+                  -0.04334760084748268,
+                  -0.04334760084748268,
+                  -0.06261994689702988,
+                  -0.060131482779979706,
+                  -0.057741679251194,
+                  -0.05544664338231087,
+                  -0.05324262008070946,
+                  -0.03354668617248535,
+                  -0.04944038763642311,
+                  -0.04747429117560387,
+                  -1.7897109985351562,
+                  -0.061378736048936844,
+                  -0.061378736048936844,
+                  -0.012075038626790047,
+                  -0.5023152828216553,
+                  -0.04161493480205536,
+                  -0.04161493480205536,
+                  -0.008576947264373302,
+                  -0.38404905796051025,
+                  -0.24811884760856628,
+                  -1.168306589126587,
+                  0.5490691065788269,
+                  -0.3346942365169525,
+                  -0.6744774580001831,
+                  -1.6025463342666626,
+                  -0.018157361075282097,
+                  -0.025519508868455887,
+                  -0.025519508868455887,
+                  -0.6180934906005859,
+                  -0.6180934906005859,
+                  -1.5781207084655762,
+                  4.883264064788818,
+                  3.6279513835906982,
+                  -0.9274101853370667,
+                  -0.9274101853370667,
+                  -2.270869731903076,
+                  -0.46780771017074585,
+                  0,
+                  -0.10684239119291306,
+                  -0.4783537983894348,
+                  -0.3111027479171753,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -3.1521973609924316,
+                  -0.562569797039032,
+                  -0.7221006155014038,
+                  -0.7221006155014038,
+                  5.686934471130371,
+                  2.589653730392456,
+                  2.589653730392456,
+                  2.589653730392456,
+                  3.364088773727417,
+                  0.7744302749633789,
+                  0.7744302749633789,
+                  0.7744302749633789,
+                  -0.5017066597938538,
+                  -0.46909987926483154,
+                  -0.3188459277153015,
+                  -0.46186239550022706
+                ],
+                [
+                  -0.06705766171216965,
+                  -0.1018376499414444,
+                  -0.0994725152850151,
+                  -0.04587847739458084,
+                  -0.03920934721827507,
+                  -0.03920934721827507,
+                  -0.05855625495314598,
+                  -0.06163211911916733,
+                  -0.059386830776929855,
+                  -0.05722213536500931,
+                  -0.055135197937488556,
+                  -0.031054003164172173,
+                  -0.05178934335708618,
+                  -0.04989641159772873,
+                  -0.2663078308105469,
+                  -0.08012992888689041,
+                  -0.08012992888689041,
+                  -0.04052194952964783,
+                  -0.013284445740282536,
+                  -0.03852842375636101,
+                  -0.03852842375636101,
+                  -0.009446908719837666,
+                  1.8201326131820679,
+                  -2.197145938873291,
+                  0.09397803992033005,
+                  0.4560967981815338,
+                  -0.6429527401924133,
+                  0.36967435479164124,
+                  -1.3747056722640991,
+                  -1.3563913106918335,
+                  -0.042353976517915726,
+                  -2.171973943710327,
+                  0.778856098651886,
+                  0.778856098651886,
+                  -0.965509831905365,
+                  -0.05089907348155975,
+                  -0.20444777607917786,
+                  -0.12182474881410599,
+                  -0.12182474881410599,
+                  -0.12182474881410599,
+                  -0.09028993546962738,
+                  0,
+                  -0.16078315675258636,
+                  0,
+                  -0.0501004233956337,
+                  -0.9472094774246216,
+                  -0.012604850344359875,
+                  -0.00833901111036539,
+                  -0.00833901111036539,
+                  -0.03927357867360115,
+                  -0.046065010130405426,
+                  0,
+                  0,
+                  -0.02657499723136425,
+                  -0.006359723396599293,
+                  -0.006359723396599293,
+                  -0.006359723396599293,
+                  -0.010932988487184048,
+                  -0.004467885475605726,
+                  -0.004467885475605726,
+                  -0.004467885475605726,
+                  12.094423294067383,
+                  -2.2850542068481445,
+                  -2.2848033905029297,
+                  -0.18862731044347614
+                ],
+                [
+                  -0.11031521111726761,
+                  -0.14871685206890106,
+                  -0.15034125745296478,
+                  -0.07589007914066315,
+                  -0.055692002177238464,
+                  -0.055692002177238464,
+                  -0.09743481874465942,
+                  -0.09384331107139587,
+                  -0.09038262814283371,
+                  -0.08704806119203568,
+                  -0.08383508771657944,
+                  -0.04400547221302986,
+                  -0.08417201042175293,
+                  -0.08124051243066788,
+                  -0.6425788402557373,
+                  -0.18800096213817596,
+                  -0.18800096213817596,
+                  -0.13312295079231262,
+                  -0.01807643473148346,
+                  -0.0632251501083374,
+                  -0.0632251501083374,
+                  -0.012879160232841969,
+                  -1.5392605066299438,
+                  -1.410484790802002,
+                  1.5136653184890747,
+                  0.9525909423828125,
+                  -1.7105607986450195,
+                  0.06712979823350906,
+                  -1.620572805404663,
+                  -1.5146523714065552,
+                  -0.4820689260959625,
+                  -1.189141869544983,
+                  0.6938185691833496,
+                  0.6938185691833496,
+                  -0.986397385597229,
+                  -0.19183208048343658,
+                  -0.6856465339660645,
+                  -0.24216873943805695,
+                  -0.24216873943805695,
+                  -0.2904302775859833,
+                  -0.16771259903907776,
+                  0,
+                  -0.43614235520362854,
+                  0,
+                  -0.17393915355205536,
+                  -0.886254608631134,
+                  0,
+                  -0.33618804812431335,
+                  -0.33618804812431335,
+                  -0.1673673689365387,
+                  -0.20228520035743713,
+                  -0.04175117611885071,
+                  -0.04175117611885071,
+                  -0.14912694692611694,
+                  -0.031565111130476,
+                  -0.031565111130476,
+                  -0.031565111130476,
+                  -0.0721401572227478,
+                  -0.037264250218868256,
+                  -0.037264250218868256,
+                  -0.037264250218868256,
+                  -2.2214701175689697,
+                  12.004786491394043,
+                  -2.2329354286193848,
+                  -0.16286436952386482
+                ],
+                [
+                  -0.10149262100458145,
+                  -0.17585580050945282,
+                  -0.17059406638145447,
+                  -0.0839955285191536,
+                  -0.05593476444482803,
+                  -0.05593476444482803,
+                  -0.08749919384717941,
+                  -0.08399731665849686,
+                  -0.08063535392284393,
+                  -0.07740773260593414,
+                  -0.0743090882897377,
+                  -0.056746192276477814,
+                  -0.06907632201910019,
+                  -0.06631007045507431,
+                  -0.4562172591686249,
+                  -0.1589789241552353,
+                  -0.1589789241552353,
+                  -0.083350770175457,
+                  -0.02494008280336857,
+                  -0.05822240188717842,
+                  -0.05822240188717842,
+                  -0.01768822781741619,
+                  -0.28405511379241943,
+                  -2.20283579826355,
+                  0.45172691345214844,
+                  0.5603235960006714,
+                  1.379010558128357,
+                  0.25038284063339233,
+                  -1.5664032697677612,
+                  -1.6452516317367554,
+                  -1.1940395832061768,
+                  -2.080904245376587,
+                  0.7796297669410706,
+                  0.7796297669410706,
+                  -1.0350992679595947,
+                  -0.06606156378984451,
+                  -0.31700143218040466,
+                  -0.21959394216537476,
+                  -0.21959394216537476,
+                  -0.21959394216537476,
+                  -0.14102491736412048,
+                  0,
+                  -0.23481859266757965,
+                  0,
+                  -0.11614211648702621,
+                  -1.1155173778533936,
+                  -0.4071335792541504,
+                  -0.6966027021408081,
+                  -0.6966027021408081,
+                  -0.04579460620880127,
+                  -0.05442454293370247,
+                  0,
+                  0,
+                  -0.01736050471663475,
+                  -0.005988649558275938,
+                  -0.005988649558275938,
+                  -0.005988649558275938,
+                  -0.006905522663146257,
+                  -0.00032244710018858314,
+                  -0.00032244710018858314,
+                  -0.00032244710018858314,
+                  -1.938462495803833,
+                  -1.93267023563385,
+                  12.325498580932617,
+                  -0.425881794579783
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "nl",
+        "doei"
+      ],
+      [
+        "nl",
+        "dag"
+      ],
+      [
+        "nl",
+        "tot ziens"
+      ],
+      [
+        "nl",
+        "tot de volgende"
+      ],
+      [
+        "nl",
+        "ciao"
+      ],
+      [
+        "nl",
+        "hey"
+      ],
+      [
+        "nl",
+        "haai"
+      ],
+      [
+        "nl",
+        "hallo"
+      ],
+      [
+        "nl",
+        "hoi"
+      ],
+      [
+        "nl",
+        "goeie dag"
+      ],
+      [
+        "nl",
+        "Goedendag"
+      ],
+      [
+        "nl",
+        "hye"
+      ],
+      [
+        "nl",
+        "Hoe gaat het"
+      ],
+      [
+        "nl",
+        "hoe gaat het met jou"
+      ],
+      [
+        "nl",
+        "alles goed"
+      ],
+      [
+        "nl",
+        "hoe gaat het ermee"
+      ],
+      [
+        "nl",
+        "hoeveel broers heb je"
+      ],
+      [
+        "nl",
+        "heb je veel broers"
+      ],
+      [
+        "nl",
+        "heb je een groote familie"
+      ],
+      [
+        "nl",
+        "heb je veel broers en zussen"
+      ],
+      [
+        "nl",
+        "vertel eens over je groot ouders"
+      ],
+      [
+        "nl",
+        "hoe zijn je groot ouders"
+      ],
+      [
+        "nl",
+        "wat voor persoon is je moeder"
+      ],
+      [
+        "nl",
+        "hoe heet jij"
+      ],
+      [
+        "nl",
+        "hoe noem je"
+      ],
+      [
+        "nl",
+        "wat is jou naam"
+      ],
+      [
+        "nl",
+        "wat voor persoon is je vader"
+      ],
+      [
+        "nl",
+        "hoe gaat het met je vader"
+      ],
+      [
+        "nl",
+        "heb je verder nog veel familie"
+      ],
+      [
+        "nl",
+        "vertel eens over je verdere familie"
+      ],
+      [
+        "nl",
+        "heb je veel ooms en tantes"
+      ],
+      [
+        "nl",
+        "heb je veel zussen"
+      ],
+      [
+        "nl",
+        "hoeveel zussen heb je"
+      ],
+      [
+        "nl",
+        "wat eet je graag"
+      ],
+      [
+        "nl",
+        "wat is je lieflings eten"
+      ],
+      [
+        "nl",
+        "wat zijn je hobbies"
+      ],
+      [
+        "nl",
+        "wat doe je graag in je vrije tijd"
+      ],
+      [
+        "nl",
+        "wat zijn zoal je vije tijds bezigheden"
+      ],
+      [
+        "nl",
+        "vertel eens over je honden"
+      ],
+      [
+        "nl",
+        "hoeveel honden heb je"
+      ],
+      [
+        "nl",
+        "heb je huisdieren"
+      ],
+      [
+        "nl",
+        "vertel eens over je huisdieren"
+      ],
+      [
+        "nl",
+        "vertel eens over je katten"
+      ],
+      [
+        "nl",
+        "heb je veel katten"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "nl": {
+        "begroeting.dag": [
+          {
+            "answer": "houdoe"
+          },
+          {
+            "answer": "Hye, Hou je Goed"
+          },
+          {
+            "answer": "Doei"
+          },
+          {
+            "answer": "Tot later"
+          },
+          {
+            "answer": "Ciao"
+          },
+          {
+            "answer": "Adios Amigo"
+          }
+        ],
+        "begroeting.hallo": [
+          {
+            "answer": "Hey!"
+          },
+          {
+            "answer": "Hoi"
+          },
+          {
+            "answer": "Hallo"
+          },
+          {
+            "answer": "Goeie Dag"
+          }
+        ],
+        "begroeting.hoegaathet": [
+          {
+            "answer": "Goed"
+          },
+          {
+            "answer": "Goed hoor"
+          },
+          {
+            "answer": "top ik heb een heel fijne dag"
+          },
+          {
+            "answer": "helemaal goed"
+          }
+        ],
+        "informatie.broers": [
+          {
+            "answer": "ik heb 2 broers"
+          },
+          {
+            "answer": "ik heb 2 broers waarvan er een binnenkort trouwt"
+          }
+        ],
+        "informatie.familie": [
+          {
+            "answer": "Ik heb 2 broers en had 3 zussen, maar er is er afgelopen zomer een overleden"
+          },
+          {
+            "answer": "Ik heb een groot gezin met veel broers en zussen"
+          }
+        ],
+        "informatie.grootouders": [
+          {
+            "answer": "2 van mijn groot ouders weet ik niks van die waren al overleden voor mijn geboorte de andere 2 zijn in relatieve term recent overleden"
+          },
+          {
+            "answer": "al mijn groot ouders zijn nu overleden maar de gene die ik gekend heb ging ik altijd graag op visite en was ik altijd blij te zien"
+          }
+        ],
+        "informatie.moeder": [
+          {
+            "answer": "mijn moeder heeft Frans gestudeerd, ik weet niet aan welke Universiteit"
+          },
+          {
+            "answer": "mijn moeder heeft Gestudeerd als binnenhuis architect"
+          }
+        ],
+        "informatie.naam": [
+          {
+            "answer": "Mijn naam is Darius"
+          },
+          {
+            "answer": "Ik heet Darius"
+          },
+          {
+            "answer": "Darius"
+          }
+        ],
+        "informatie.vader": [
+          {
+            "answer": "Mijn vader was een burgerlijk ingenieur en werkte voor de europeese commissie"
+          },
+          {
+            "answer": "Mijn vader is overleden in 2012, maar is een persoon waar ik altijd enorm veel respect voor had en zal hebben"
+          }
+        ],
+        "informatie.verderefamilie": [
+          {
+            "answer": "mijn vader had 1 broer dus langs die kant heb ik een oom en tante en een neef en nicht langs moeders kant is het een veel uitgebreider verhaal wat al wat moeilijker is om op te sommen"
+          },
+          {
+            "answer": "ik heb een algemeen grote familie met veel ooms en tantes, neven en nichten. waarvan sommigen neven en nichten zelf ook al kinderen hebben"
+          }
+        ],
+        "informatie.zussen": [
+          {
+            "answer": "ik heb 2 zussen waarvan er een als radioloog werkt en mijn jongste zus zit in het laatste jaar van haar middelbaar"
+          },
+          {
+            "answer": "ik heb 2 zussen, ik had er drie maar begin afgelopen zomer is er helaas een overleden"
+          }
+        ],
+        "vragen.eten": [
+          {
+            "answer": "ik eet graag pizza"
+          },
+          {
+            "answer": "mijn favoriete eten is steak met pepersaus en friet"
+          },
+          {
+            "answer": "ik ben wel een fan van aziatish eten zoals wok en teriyaki"
+          }
+        ],
+        "vragen.hobbies": [
+          {
+            "answer": "In mijn vrijetijd zit ik soms wel eens een beetje te programmeren, of te gamen, maar ik hou ook wel van eens wat te gaan zwemmen of fietsen. en de cafe avonden horen daar natuurlijk ook bij"
+          },
+          {
+            "answer": "ik ga wel eens graag met vrienden op cafe"
+          },
+          {
+            "answer": "als ik in de zomer in Spanje ben lig ik meestal de hele dag aan het zwembad"
+          },
+          {
+            "answer": "in mijn vrije tijd game ik wel graag met vrienden"
+          }
+        ],
+        "vragen.honden": [
+          {
+            "answer": "ik heb 4 honden, 2 franse bulldogs, een labrador en een bernerzenne"
+          },
+          {
+            "answer": "ik heb 2 relatief groote honden en 2 kleine hondjes"
+          }
+        ],
+        "vragen.huisdieren": [
+          {
+            "answer": "ik heb honden en katten"
+          },
+          {
+            "answer": "we hebben honden en katten"
+          }
+        ],
+        "vragen.katten": [
+          {
+            "answer": "we hebben 4 katten"
+          },
+          {
+            "answer": "we hebben 4 katten, Black Panther, Whitefoot, Black Betty en Simba"
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}

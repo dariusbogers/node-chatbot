@@ -1,14 +1,17 @@
 {
-    "questions": [
-        "hallo",
-        "hey",
-        "howdy",
-        "Hey daar!",
-        "Goedendag!"
-    ],
-    "answers": [
-        "Hey, hallo!",
-        "Hallo!",
-        "Goedendag!"
-    ]
+  "questions": [
+    "hey",
+    "haai",
+    "hallo",
+    "hoi",
+    "goeie dag",
+    "Goedendag",
+    "hye"
+  ],
+  "answers": [
+    "Hey!",
+    "Hoi",
+    "Hallo",
+    "Goeie Dag"
+  ]
 }
